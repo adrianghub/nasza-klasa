@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 import 'package:nasza_klasa_ui/config/palette.dart';
+import 'package:nasza_klasa_ui/widgets/circle_button.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key key}) : super(key: key);
@@ -22,6 +24,24 @@ class HomeScreen extends StatelessWidget {
             ),
           ),
           centerTitle: false,
+          floating: true,
+          actions: [
+            CircleButton(
+              icon: Icons.search, 
+              iconSize: 30.0, 
+              onPressed: () => print('Szukaj')
+              ),
+            CircleButton(
+              icon: MdiIcons.chatOutline, 
+              iconSize: 30.0, 
+              onPressed: () => print('Czatuj')
+              ),
+            CircleButton(
+              icon: MdiIcons.menu, 
+              iconSize: 30.0, 
+              onPressed: () => print('Menu')
+              )
+          ],
         )
       ],
     ));
