@@ -1,5 +1,5 @@
 import 'package:meta/meta.dart';
-import 'package:flutter_facebook_responsive_ui/models/models.dart';
+import 'package:nasza_klasa_ui/models/models.dart';
 
 class Post {
   final User user;
