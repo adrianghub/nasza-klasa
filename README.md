@@ -1,2 +1,2 @@
-# some-social-media-ui
+# nasza-klasa
 Flutter social media UI
