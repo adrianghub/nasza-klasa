@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:nasza_klasa_ui/data/data.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
-import 'package:nasza_klasa_ui/config/palette.dart';
 import 'package:nasza_klasa_ui/widgets/circle_button.dart';
+import 'package:nasza_klasa_ui/widgets/widgets.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key key}) : super(key: key);
@@ -17,7 +18,7 @@ class HomeScreen extends StatelessWidget {
           title: Text(
             'nasza klasa',
             style: const TextStyle(
-              color: Palette.facebookBlue,
+              color: Colors.teal,
               fontSize: 28.0,
               fontWeight: FontWeight.bold,
               letterSpacing: -1.2,
@@ -42,6 +43,9 @@ class HomeScreen extends StatelessWidget {
               onPressed: () => print('Menu')
               )
           ],
+        ),
+        SliverToBoxAdapter(
+            child: CreatePostContainer(currentUser: currentUser)
         )
       ],
     ));
